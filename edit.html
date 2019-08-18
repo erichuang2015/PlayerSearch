@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/styles/styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div class="addNew"><a href="http://localhost/FyP/">Back to Search</a></div>
+
+        <div class="wrapper_add">
+            <h1>Edit Player</h1>
+            <form action="./routes/edit.php" method="POST" id="editNewPlayers">
+                <li><label for="ID">ID: </label><input type="text" name="ID" id="ID"></li>
+                <li>
+                    <label for="editLigue">League: </label>
+                    <select name="editLigue" id="editLigue">
+                        <option value="Bundesliga">Bundesliga</option>
+                        <option value="Premier League">Premier League</option>
+                        <option value="La Liga">La Liga</option>
+                        <option value="Serie A">Serie A</option>
+                        <option value="Ligue A">Ligue A</option>
+                    </select>
+                </li>
+                <li><label for="editName">Name: </label><input type="text" name="editName" id="editName"></li>
+                <li><label for="editTeam">Team: </label><input type="text" name="editTeam" id="editTeam"></li>
+                <li><label for="editAge">Age: </label><input type="text" name="editAge" id="editAge"></li>
+                <li><label for="editHeight">Height: </label><input type="text" name="editHeight" id="editHeight"></li>
+                <li>
+                    <label for="editPos">Position: </label>
+                    <select name="editPos" id="editPos">
+                            <option value="TW">TW</option>
+                            <option value="IV">IV</option>
+                            <option value="RV">RV</option>
+                            <option value="LV">LV</option>
+                            <option value="ZDM">ZDM</option>
+                            <option value="ZM">ZM</option>
+                            <option value="RM">RM</option>
+                            <option value="LM">LM</option>
+                            <option value="ZOM">ZOM</option>
+                            <option value="RF">RF</option>
+                            <option value="LF">LF</option>
+                            <option value="HS">HS</option>
+                            <option value="MS">MS</option>
+                    </select>
+                </li>
+                <li><label for="editValue">Value: </label><input type="text" name="editValue" id="editValue"></li>
+
+                <li><label for="editAgent">Agent: </label><input type="text" name="editAgent" id="editAgent"></li>
+                <li><label for="editImg">Image URL: </label><input type="text" name="editImg" id="editImg"></li>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <script src="./js/libs/jquery-3.4.1.min.js"></script>
+        <script src="./js/Edit.js"></script>
+    </body>
+</html>

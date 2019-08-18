@@ -1,0 +1,168 @@
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    background: url("/FyP/assets/img/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    min-height: 100vh;
+}
+h1 {
+    margin: 1em 0;
+    text-transform: uppercase;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    margin: 1em 0;
+    list-style: none;
+}
+
+#addPos{
+    padding: 0.5em !important;
+    background: transparent !important;
+    color: #fff;
+}
+option {
+    background: #000;
+}
+input[type="text"], select {
+    margin-top: 0.5em;
+    width: 100%;
+    border-radius: 20px;
+    padding: 0.5em;
+    background: transparent;
+    color: #fff;
+}
+
+.wrapper {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10% 0 1em 0;
+}
+
+input {
+    border: 1px solid #d2d2d2;
+    padding: 0.2em;
+    margin: 1em 0;
+}
+input[type="password"]{
+    width: 100%;
+}
+#search {
+    padding: 1.2em;
+    min-width: 60%;
+    border-radius: 20px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #ffffff73;
+}
+#display {
+    max-height: 50vh;
+    overflow-x: scroll;
+}
+.player {
+    background: #011638a1;
+    box-shadow: 5px 5px 3px #00000054;
+    margin-bottom: 1em;
+    border-radius: 20px;
+    text-align: center;
+    padding: 1em;
+    display: block;
+    justify-content: center;
+}
+.player__row{
+    width: 100%;
+}
+.player__img {
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 700px){
+    .player {
+        display: flex;
+        text-align: left;
+    }
+    .player__row{
+        width: 33%;
+    }
+    .player__img {
+        justify-content: flex-end;
+    }
+}
+@media (min-width: 1000px){
+    .wrapper {
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        padding: 10% 0 1em 0;
+    }
+}
+
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.addNew {
+    padding: 1em;
+}
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #9999995e; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #011638; 
+  }
+.wrapper_add {
+      width: 30%;
+      margin: 0 auto;
+      padding: 1em 0;
+}
+.wrapper_add input {
+    padding: 0.5em;
+    background: transparent;
+    border-radius: 20px;
+    color: #fff;
+}
+.wrapper_add button {
+    padding: 0.5em;
+    background: #192628;
+    border-radius: 20px;
+    color: #fff;
+    width: 100%;;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.wrapper_add h1{
+    text-align: center;
+}
+#addNewPlayers input {
+    width: 100%;
+}
+.res_label {
+    font-size: 1.1em;
+    font-weight: 900;
+}
